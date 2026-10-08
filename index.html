@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChaloChale - Your Travel Partner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fa-solid fa-plane-departure me-2"></i> ChaloChale
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="login.html" class="btn btn-warning ms-lg-3">Login</a>
+                <a href="signup.html" class="btn btn-warning ms-lg-2">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Section Start -->
+    <div id="travelCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/beach.webp" class="d-block w-100" alt="Beach">
+                <div class="carousel-caption">
+                    <h2>Explore the World</h2>
+                    <p>Create Memories That Last Forever</p>
+                    <a href="destinations.html" class="btn btn-primary">Explore Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/mountain.jpg" class="d-block w-100" alt="Mountains">
+                <div class="carousel-caption">
+                    <h2>Adventure Awaits</h2>
+                    <p>Discover Hidden Treasures & Experiences</p>
+                    <a href="packages.html" class="btn btn-primary">View Packages</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/city.webp" class="d-block w-100" alt="City">
+                <div class="carousel-caption">
+                    <h2>Your Dream Trip</h2>
+                    <p>Plan Your Perfect Getaway With Us</p>
+                    <a href="booking.html" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#travelCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#travelCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <!-- Carousel Section End -->
+
+    <!-- Search Section -->
+    <div class="container">
+        <div class="search-section">
+            <div class="search-box">
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-3">
+                            <label class="form-label fw-bold">Where to?</label>
+                            <input type="text" class="form-control" placeholder="Search destinations">
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label fw-bold">When</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label fw-bold">Travelers</label>
+                            <select class="form-select">
+                                <option>1 Traveler</option>
+                                <option>2 Travelers</option>
+                                <option>3 Travelers</option>
+                                <option>4+ Travelers</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 d-flex align-items-end">
+                            <button type="submit" class="btn search-btn">
+                                <i class="fa-solid fa-search me-2"></i> Search
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Destinations -->
+    <section class="container">
+        <div class="section-title">
+            <h2>Featured Destinations</h2>
+            <p>Top destinations handpicked for your next adventure</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/beach.webp" class="card-img-top" alt="Maldives">
+                        <span class="card-badge">Popular</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Maldives</h3>
+                        <p class="card-text">Experience paradise with crystal clear waters and pristine beaches.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-calendar"></i> 5 Days</span>
+                            <span class="card-feature"><i class="fa-solid fa-users"></i> 2 People</span>
+                        </div>
+                        <p class="card-price">₹45,000 <span>/ person</span></p>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/mountain.jpg" class="card-img-top" alt="Switzerland">
+                        <span class="card-badge">Trending</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Switzerland</h3>
+                        <p class="card-text">Discover the majestic Alps and charming European villages.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-calendar"></i> 7 Days</span>
+                            <span class="card-feature"><i class="fa-solid fa-users"></i> 2 People</span>
+                        </div>
+                        <p class="card-price">₹85,000 <span>/ person</span></p>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/city.webp" class="card-img-top" alt="Thailand">
+                        <span class="card-badge">Best Value</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Thailand</h3>
+                        <p class="card-text">Explore vibrant cities, temples, and stunning beaches.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-calendar"></i> 6 Days</span>
+                            <span class="card-feature"><i class="fa-solid fa-users"></i> 2 People</span>
+                        </div>
+                        <p class="card-price">₹35,000 <span>/ person</span></p>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Packages -->
+    <section class="container">
+        <div class="section-title">
+            <h2>Popular Tour Packages</h2>
+            <p>Handpicked packages for unforgettable experiences</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="package-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/beach.webp" class="card-img-top" alt="Beach Paradise">
+                        <span class="card-badge">20% OFF</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Beach Paradise</h3>
+                        <p class="card-text">All-inclusive beach resort experience with water sports.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-bed"></i> 5 Star</span>
+                            <span class="card-feature"><i class="fa-solid fa-utensils"></i> Meals</span>
+                            <span class="card-feature"><i class="fa-solid fa-car"></i> Transfer</span>
+                        </div>
+                        <p class="card-price">₹55,000 <span>/ person</span></p>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="package-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/mountain.jpg" class="card-img-top" alt="Mountain Adventure">
+                        <span class="card-badge">15% OFF</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Mountain Adventure</h3>
+                        <p class="card-text">Trekking, camping, and exploring mountain trails.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-bed"></i> 4 Star</span>
+                            <span class="card-feature"><i class="fa-solid fa-utensils"></i> Meals</span>
+                            <span class="card-feature"><i class="fa-solid fa-hiking"></i> Guide</span>
+                        </div>
+                        <p class="card-price">₹42,000 <span>/ person</span></p>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="package-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/city.webp" class="card-img-top" alt="City Explorer">
+                        <span class="card-badge">10% OFF</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">City Explorer</h3>
+                        <p class="card-text">Guided city tours with cultural experiences.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-bed"></i> 3 Star</span>
+                            <span class="card-feature"><i class="fa-solid fa-utensils"></i> Breakfast</span>
+                            <span class="card-feature"><i class="fa-solid fa-bus"></i> Transport</span>
+                        </div>
+                        <p class="card-price">₹28,000 <span>/ person</span></p>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose ChaloChale?</h2>
+                <p>We make your travel dreams come true</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-tag"></i>
+                        </div>
+                        <h3>Best Price Guarantee</h3>
+                        <p>Get the best deals and unbeatable prices for amazing experiences.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>We are here to help you anytime before, during and after your trip.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <h3>Handpicked Experiences</h3>
+                        <p>Curated tours and unique experiences just for you.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3>Trusted & Secure</h3>
+                        <p>Safe bookings, secure payments and trusted travel partners.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="container">
+        <div class="section-title">
+            <h2>What Our Travelers Say</h2>
+            <p>Real experiences from our happy customers</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Traveler" class="testimonial-avatar">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Amazing experience! The Maldives trip was perfectly organized. Will definitely book again!"</p>
+                    <h4 class="testimonial-author">Priya Sharma</h4>
+                    <p class="testimonial-location">Mumbai, India</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Traveler" class="testimonial-avatar">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="testimonial-text">"Best travel agency! The Switzerland tour exceeded all our expectations. Highly recommended!"</p>
+                    <h4 class="testimonial-author">Rahul Verma</h4>
+                    <p class="testimonial-location">Delhi, India</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Traveler" class="testimonial-avatar">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Professional service and great value for money. Thailand trip was unforgettable!"</p>
+                    <h4 class="testimonial-author">Anita Patel</h4>
+                    <p class="testimonial-location">Bangalore, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Travel Recommendation -->
+    <section class="ai-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="mb-4">AI-Powered Travel Recommendations</h2>
+                    <p class="mb-4">Let our AI help you find your perfect destination based on your preferences, budget, and travel style.</p>
+                    <div class="ai-box">
+                        <form id="aiRecommendationForm">
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Your Budget</label>
+                                <select class="form-select" id="budget">
+                                    <option value="budget">Budget (Under ₹30,000)</option>
+                                    <option value="moderate">Moderate (₹30,000 - ₹60,000)</option>
+                                    <option value="luxury">Luxury (Above ₹60,000)</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Travel Style</label>
+                                <select class="form-select" id="travelStyle">
+                                    <option value="adventure">Adventure</option>
+                                    <option value="relaxation">Relaxation</option>
+                                    <option value="cultural">Cultural</option>
+                                    <option value="romantic">Romantic</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Duration</label>
+                                <select class="form-select" id="duration">
+                                    <option value="short">Short (3-5 days)</option>
+                                    <option value="medium">Medium (6-10 days)</option>
+                                    <option value="long">Long (10+ days)</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-warning w-100">
+                                <i class="fa-solid fa-wand-magic-sparkles me-2"></i> Get Recommendations
+                            </button>
+                        </form>
+                        <div id="aiResult" class="ai-result d-none">
+                            <h5 class="fw-bold mb-3">Recommended Destination:</h5>
+                            <p id="aiRecommendationText"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <i class="fa-solid fa-robot" style="font-size: 15rem; opacity: 0.3;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container text-center">
+            <h2>Get Travel Inspiration & Exclusive Deals</h2>
+            <p>Subscribe to our newsletter and get the best travel tips and offers straight to your inbox.</p>
+            <form class="newsletter-form">
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                    <button type="submit" class="btn">Subscribe Now</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4>ChaloChale</h4>
+                    <p>Your trusted travel partner for unforgettable journeys across the globe.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Top Destinations</h4>
+                    <ul>
+                        <li><a href="#">Maldives</a></li>
+                        <li><a href="#">Switzerland</a></li>
+                        <li><a href="#">Greece</a></li>
+                        <li><a href="#">Thailand</a></li>
+                        <li><a href="#">Bali</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Booking Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-phone me-2"></i> +91 98765 43210</li>
+                        <li><i class="fa-solid fa-envelope me-2"></i> info@chalochale.com</li>
+                        <li><i class="fa-solid fa-location-dot me-2"></i> New Delhi, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 ChaloChale. All rights reserved. Made with ❤️ for travelers</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

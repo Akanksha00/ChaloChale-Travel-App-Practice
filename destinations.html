@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - ChaloChale</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fa-solid fa-plane-departure me-2"></i> ChaloChale
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="login.html" class="btn btn-warning ms-lg-3">Login</a>
+                <a href="signup.html" class="btn btn-warning ms-lg-2">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Explore Destinations</h1>
+            <p>Discover amazing places around the world waiting for you</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-10">
+                <div class="search-box">
+                    <div class="row g-3 align-items-end">
+                        <div class="col-md-3">
+                            <label class="form-label fw-bold">Search</label>
+                            <input type="text" class="form-control" id="searchInput" placeholder="Search destinations">
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label fw-bold">Region</label>
+                            <select class="form-select" id="regionFilter">
+                                <option value="all">All Regions</option>
+                                <option value="asia">Asia</option>
+                                <option value="europe">Europe</option>
+                                <option value="americas">Americas</option>
+                                <option value="africa">Africa</option>
+                                <option value="oceania">Oceania</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label fw-bold">Type</label>
+                            <select class="form-select" id="typeFilter">
+                                <option value="all">All Types</option>
+                                <option value="beach">Beach</option>
+                                <option value="mountain">Mountain</option>
+                                <option value="city">City</option>
+                                <option value="cultural">Cultural</option>
+                                <option value="adventure">Adventure</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label fw-bold">Budget</label>
+                            <select class="form-select" id="budgetFilter">
+                                <option value="all">All Budgets</option>
+                                <option value="budget">Budget (Under ₹30k)</option>
+                                <option value="moderate">Moderate (₹30k-60k)</option>
+                                <option value="luxury">Luxury (Above ₹60k)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Destinations Grid -->
+        <div class="row g-4" id="destinationsGrid">
+            <!-- Asia -->
+            <div class="col-md-4 destination-item" data-region="asia" data-type="beach" data-budget="luxury">
+                <div class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/beach.webp" class="card-img-top" alt="Maldives">
+                        <span class="card-badge">Popular</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Maldives</h3>
+                        <p class="card-text">Experience paradise with crystal clear waters and pristine beaches. Perfect for romantic getaways.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-calendar"></i> 5 Days</span>
+                            <span class="card-feature"><i class="fa-solid fa-users"></i> 2 People</span>
+                            <span class="card-feature"><i class="fa-solid fa-star"></i> 4.9</span>
+                        </div>
+                        <p class="card-price">₹45,000 <span>/ person</span></p>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 destination-item" data-region="asia" data-type="cultural" data-budget="moderate">
+                <div class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/city.webp" class="card-img-top" alt="Thailand">
+                        <span class="card-badge">Trending</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Thailand</h3>
+                        <p class="card-text">Explore vibrant cities, ancient temples, and stunning beaches. A perfect blend of culture and adventure.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-calendar"></i> 6 Days</span>
+                            <span class="card-feature"><i class="fa-solid fa-users"></i> 2 People</span>
+                            <span class="card-feature"><i class="fa-solid fa-star"></i> 4.7</span>
+                        </div>
+                        <p class="card-price">₹35,000 <span>/ person</span></p>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 destination-item" data-region="asia" data-type="cultural" data-budget="budget">
+                <div class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/city.webp" class="card-img-top" alt="Vietnam">
+                        <span class="card-badge">Best Value</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Vietnam</h3>
+                        <p class="card-text">Discover the beauty of Vietnam with its stunning landscapes, rich history, and delicious cuisine.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-calendar"></i> 7 Days</span>
+                            <span class="card-feature"><i class="fa-solid fa-users"></i> 2 People</span>
+                            <span class="card-feature"><i class="fa-solid fa-star"></i> 4.6</span>
+                        </div>
+                        <p class="card-price">₹25,000 <span>/ person</span></p>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Europe -->
+            <div class="col-md-4 destination-item" data-region="europe" data-type="mountain" data-budget="luxury">
+                <div class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/mountain.jpg" class="card-img-top" alt="Switzerland">
+                        <span class="card-badge">Popular</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Switzerland</h3>
+                        <p class="card-text">Discover the majestic Alps, charming villages, and pristine lakes. A nature lover's paradise.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-calendar"></i> 7 Days</span>
+                            <span class="card-feature"><i class="fa-solid fa-users"></i> 2 People</span>
+                            <span class="card-feature"><i class="fa-solid fa-star"></i> 4.9</span>
+                        </div>
+                        <p class="card-price">₹85,000 <span>/ person</span></p>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 destination-item" data-region="europe" data-type="cultural" data-budget="moderate">
+                <div class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/city.webp" class="card-img-top" alt="Greece">
+                        <span class="card-badge">Trending</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Greece</h3>
+                        <p class="card-text">Explore ancient history, stunning islands, and Mediterranean cuisine. A journey through time.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-calendar"></i> 8 Days</span>
+                            <span class="card-feature"><i class="fa-solid fa-users"></i> 2 People</span>
+                            <span class="card-feature"><i class="fa-solid fa-star"></i> 4.8</span>
+                        </div>
+                        <p class="card-price">₹55,000 <span>/ person</span></p>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 destination-item" data-region="europe" data-type="city" data-budget="moderate">
+                <div class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/city.webp" class="card-img-top" alt="Italy">
+                        <span class="card-badge">Romantic</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Italy</h3>
+                        <p class="card-text">Experience art, history, fashion, and incredible food. From Rome to Venice, every city is unique.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-calendar"></i> 9 Days</span>
+                            <span class="card-feature"><i class="fa-solid fa-users"></i> 2 People</span>
+                            <span class="card-feature"><i class="fa-solid fa-star"></i> 4.8</span>
+                        </div>
+                        <p class="card-price">₹62,000 <span>/ person</span></p>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Americas -->
+            <div class="col-md-4 destination-item" data-region="americas" data-type="adventure" data-budget="luxury">
+                <div class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/mountain.jpg" class="card-img-top" alt="Peru">
+                        <span class="card-badge">Adventure</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Peru</h3>
+                        <p class="card-text">Trek to Machu Picchu, explore the Amazon rainforest, and discover ancient Incan civilization.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-calendar"></i> 10 Days</span>
+                            <span class="card-feature"><i class="fa-solid fa-users"></i> 2 People</span>
+                            <span class="card-feature"><i class="fa-solid fa-star"></i> 4.7</span>
+                        </div>
+                        <p class="card-price">₹75,000 <span>/ person</span></p>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 destination-item" data-region="americas" data-type="beach" data-budget="moderate">
+                <div class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/beach.webp" class="card-img-top" alt="Mexico">
+                        <span class="card-badge">Popular</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Mexico</h3>
+                        <p class="card-text">Beautiful beaches, rich culture, amazing food, and vibrant nightlife. Something for everyone.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-calendar"></i> 7 Days</span>
+                            <span class="card-feature"><i class="fa-solid fa-users"></i> 2 People</span>
+                            <span class="card-feature"><i class="fa-solid fa-star"></i> 4.6</span>
+                        </div>
+                        <p class="card-price">₹48,000 <span>/ person</span></p>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Africa -->
+            <div class="col-md-4 destination-item" data-region="africa" data-type="adventure" data-budget="luxury">
+                <div class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/mountain.jpg" class="card-img-top" alt="South Africa">
+                        <span class="card-badge">Safari</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">South Africa</h3>
+                        <p class="card-text">Experience thrilling safaris, stunning landscapes, and diverse wildlife. An unforgettable adventure.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-calendar"></i> 8 Days</span>
+                            <span class="card-feature"><i class="fa-solid fa-users"></i> 2 People</span>
+                            <span class="card-feature"><i class="fa-solid fa-star"></i> 4.8</span>
+                        </div>
+                        <p class="card-price">₹68,000 <span>/ person</span></p>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Oceania -->
+            <div class="col-md-4 destination-item" data-region="oceania" data-type="beach" data-budget="luxury">
+                <div class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/beach.webp" class="card-img-top" alt="Bali">
+                        <span class="card-badge">Paradise</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Bali, Indonesia</h3>
+                        <p class="card-text">Tropical paradise with stunning beaches, rice terraces, temples, and vibrant culture.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-calendar"></i> 6 Days</span>
+                            <span class="card-feature"><i class="fa-solid fa-users"></i> 2 People</span>
+                            <span class="card-feature"><i class="fa-solid fa-star"></i> 4.7</span>
+                        </div>
+                        <p class="card-price">₹38,000 <span>/ person</span></p>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 destination-item" data-region="oceania" data-type="adventure" data-budget="luxury">
+                <div class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/mountain.jpg" class="card-img-top" alt="New Zealand">
+                        <span class="card-badge">Adventure</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">New Zealand</h3>
+                        <p class="card-text">Breathtaking landscapes, adventure sports, and Maori culture. A photographer's dream.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-calendar"></i> 12 Days</span>
+                            <span class="card-feature"><i class="fa-solid fa-users"></i> 2 People</span>
+                            <span class="card-feature"><i class="fa-solid fa-star"></i> 4.9</span>
+                        </div>
+                        <p class="card-price">₹95,000 <span>/ person</span></p>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 destination-item" data-region="asia" data-type="city" data-budget="budget">
+                <div class="destination-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/city.webp" class="card-img-top" alt="Singapore">
+                        <span class="card-badge">City Life</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Singapore</h3>
+                        <p class="card-text">Modern city with stunning architecture, diverse cuisine, and world-class attractions.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-calendar"></i> 4 Days</span>
+                            <span class="card-feature"><i class="fa-solid fa-users"></i> 2 People</span>
+                            <span class="card-feature"><i class="fa-solid fa-star"></i> 4.6</span>
+                        </div>
+                        <p class="card-price">₹28,000 <span>/ person</span></p>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- No Results Message -->
+        <div id="noResults" class="text-center d-none">
+            <i class="fa-solid fa-search" style="font-size: 4rem; color: #999; margin-bottom: 20px;"></i>
+            <h3>No destinations found</h3>
+            <p class="text-muted">Try adjusting your filters or search terms</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4>ChaloChale</h4>
+                    <p>Your trusted travel partner for unforgettable journeys across the globe.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Top Destinations</h4>
+                    <ul>
+                        <li><a href="#">Maldives</a></li>
+                        <li><a href="#">Switzerland</a></li>
+                        <li><a href="#">Greece</a></li>
+                        <li><a href="#">Thailand</a></li>
+                        <li><a href="#">Bali</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Booking Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-phone me-2"></i> +91 98765 43210</li>
+                        <li><i class="fa-solid fa-envelope me-2"></i> info@chalochale.com</li>
+                        <li><i class="fa-solid fa-location-dot me-2"></i> New Delhi, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 ChaloChale. All rights reserved. Made with ❤️ for travelers</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

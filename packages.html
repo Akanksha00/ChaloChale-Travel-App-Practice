@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages - ChaloChale</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fa-solid fa-plane-departure me-2"></i> ChaloChale
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="login.html" class="btn btn-warning ms-lg-3">Login</a>
+                <a href="signup.html" class="btn btn-warning ms-lg-2">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Tour Packages</h1>
+            <p>Curated travel experiences for every type of traveler</p>
+        </div>
+    </section>
+
+    <!-- Package Categories -->
+    <section class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-10">
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <button class="btn btn-outline-primary active package-filter" data-filter="all">All Packages</button>
+                    <button class="btn btn-outline-primary package-filter" data-filter="beach">Beach</button>
+                    <button class="btn btn-outline-primary package-filter" data-filter="adventure">Adventure</button>
+                    <button class="btn btn-outline-primary package-filter" data-filter="cultural">Cultural</button>
+                    <button class="btn btn-outline-primary package-filter" data-filter="romantic">Romantic</button>
+                    <button class="btn btn-outline-primary package-filter" data-filter="family">Family</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Packages Grid -->
+        <div class="row g-4" id="packagesGrid">
+            <!-- Beach Packages -->
+            <div class="col-md-4 package-item" data-category="beach">
+                <div class="package-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/beach.webp" class="card-img-top" alt="Maldives Paradise">
+                        <span class="card-badge">20% OFF</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Maldives Paradise</h3>
+                        <p class="card-text">All-inclusive luxury resort experience with water sports, spa treatments, and sunset cruises.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-bed"></i> 5 Star</span>
+                            <span class="card-feature"><i class="fa-solid fa-utensils"></i> All Meals</span>
+                            <span class="card-feature"><i class="fa-solid fa-car"></i> Transfer</span>
+                            <span class="card-feature"><i class="fa-solid fa-water"></i> Water Sports</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="text-muted text-decoration-line-through">₹68,750</span>
+                                <p class="card-price mb-0">₹55,000 <span>/ person</span></p>
+                            </div>
+                            <span class="badge bg-success">5 Days</span>
+                        </div>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 package-item" data-category="beach">
+                <div class="package-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/beach.webp" class="card-img-top" alt="Bali Beach Escape">
+                        <span class="card-badge">15% OFF</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Bali Beach Escape</h3>
+                        <p class="card-text">Experience the best of Bali with beachfront stays, temple visits, and rice terrace tours.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-bed"></i> 4 Star</span>
+                            <span class="card-feature"><i class="fa-solid fa-utensils"></i> Breakfast</span>
+                            <span class="card-feature"><i class="fa-solid fa-car"></i> Transfer</span>
+                            <span class="card-feature"><i class="fa-solid fa-camera"></i> Tours</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <span class="text-muted text-decoration-line-through">₹44,700</span>
+                                <p class="card-price mb-0">₹38,000 <span>/ person</span></p>
+                            </div>
+                            <span class="badge bg-success">6 Days</span>
+                        </div>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adventure Packages -->
+            <div class="col-md-4 package-item" data-category="adventure">
+                <div class="package-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/mountain.jpg" class="card-img-top" alt="Mountain Trek">
+                        <span class="card-badge">Best Seller</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Swiss Alps Adventure</h3>
+                        <p class="card-text">Trek through stunning Alpine trails, stay in mountain huts, and experience Swiss hospitality.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-bed"></i> 3 Star</span>
+                            <span class="card-feature"><i class="fa-solid fa-utensils"></i> All Meals</span>
+                            <span class="card-feature"><i class="fa-solid fa-hiking"></i> Guide</span>
+                            <span class="card-feature"><i class="fa-solid fa-mountain"></i> Trekking</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <p class="card-price mb-0">₹75,000 <span>/ person</span></p>
+                            </div>
+                            <span class="badge bg-success">7 Days</span>
+                        </div>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 package-item" data-category="adventure">
+                <div class="package-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/mountain.jpg" class="card-img-top" alt="Peru Expedition">
+                        <span class="card-badge">Adventure</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Peru Machu Picchu</h3>
+                        <p class="card-text">Journey to the lost city of Incas, explore Cusco, and experience the Amazon rainforest.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-bed"></i> 4 Star</span>
+                            <span class="card-feature"><i class="fa-solid fa-utensils"></i> All Meals</span>
+                            <span class="card-feature"><i class="fa-solid fa-hiking"></i> Expert Guide</span>
+                            <span class="card-feature"><i class="fa-solid fa-tree"></i> Jungle</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <p class="card-price mb-0">₹82,000 <span>/ person</span></p>
+                            </div>
+                            <span class="badge bg-success">10 Days</span>
+                        </div>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cultural Packages -->
+            <div class="col-md-4 package-item" data-category="cultural">
+                <div class="package-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/city.webp" class="card-img-top" alt="Thailand Cultural">
+                        <span class="card-badge">Popular</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Thailand Discovery</h3>
+                        <p class="card-text">Explore Bangkok's temples, Chiang Mai's culture, and Phuket's beaches in one trip.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-bed"></i> 4 Star</span>
+                            <span class="card-feature"><i class="fa-solid fa-utensils"></i> Breakfast</span>
+                            <span class="card-feature"><i class="fa-solid fa-bus"></i> Transport</span>
+                            <span class="card-feature"><i class="fa-solid fa-gopuram"></i> Temples</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <p class="card-price mb-0">₹42,000 <span>/ person</span></p>
+                            </div>
+                            <span class="badge bg-success">8 Days</span>
+                        </div>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 package-item" data-category="cultural">
+                <div class="package-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/city.webp" class="card-img-top" alt="Italy Cultural">
+                        <span class="card-badge">Classic</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Italy Grand Tour</h3>
+                        <p class="card-text">Visit Rome, Florence, Venice, and the Amalfi Coast. Art, history, and cuisine combined.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-bed"></i> 4 Star</span>
+                            <span class="card-feature"><i class="fa-solid fa-utensils"></i> Breakfast</span>
+                            <span class="card-feature"><i class="fa-solid fa-train"></i> Train Pass</span>
+                            <span class="card-feature"><i class="fa-solid fa-landmark"></i> Museums</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <p class="card-price mb-0">₹68,000 <span>/ person</span></p>
+                            </div>
+                            <span class="badge bg-success">10 Days</span>
+                        </div>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Romantic Packages -->
+            <div class="col-md-4 package-item" data-category="romantic">
+                <div class="package-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/beach.webp" class="card-img-top" alt="Santorini Romance">
+                        <span class="card-badge">Romantic</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Santorini Honeymoon</h3>
+                        <p class="card-text">Stunning sunsets, luxury cave hotels, private yacht tours, and fine dining experiences.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-bed"></i> 5 Star</span>
+                            <span class="card-feature"><i class="fa-solid fa-utensils"></i> All Meals</span>
+                            <span class="card-feature"><i class="fa-solid fa-ship"></i> Yacht Tour</span>
+                            <span class="card-feature"><i class="fa-solid fa-wine-glass"></i> Wine Tasting</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <p class="card-price mb-0">₹95,000 <span>/ person</span></p>
+                            </div>
+                            <span class="badge bg-success">7 Days</span>
+                        </div>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 package-item" data-category="romantic">
+                <div class="package-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/mountain.jpg" class="card-img-top" alt="Paris Romance">
+                        <span class="card-badge">Love</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Parisian Romance</h3>
+                        <p class="card-text">Eiffel Tower dinner, Seine cruise, Louvre visit, and charming boutique hotel stay.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-bed"></i> 4 Star</span>
+                            <span class="card-feature"><i class="fa-solid fa-utensils"></i> Breakfast</span>
+                            <span class="card-feature"><i class="fa-solid fa-ship"></i> Cruise</span>
+                            <span class="card-feature"><i class="fa-solid fa-heart"></i> Special</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <p class="card-price mb-0">₹58,000 <span>/ person</span></p>
+                            </div>
+                            <span class="badge bg-success">5 Days</span>
+                        </div>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Family Packages -->
+            <div class="col-md-4 package-item" data-category="family">
+                <div class="package-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/city.webp" class="card-img-top" alt="Disney Orlando">
+                        <span class="card-badge">Family</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Disney World Magic</h3>
+                        <p class="card-text">Ultimate family fun at Disney World with park tickets, character dining, and resort stay.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-bed"></i> 4 Star</span>
+                            <span class="card-feature"><i class="fa-solid fa-utensils"></i> Dining Plan</span>
+                            <span class="card-feature"><i class="fa-solid fa-ticket"></i> Park Tickets</span>
+                            <span class="card-feature"><i class="fa-solid fa-kid"></i> Kids Friendly</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <p class="card-price mb-0">₹1,20,000 <span>/ family</span></p>
+                            </div>
+                            <span class="badge bg-success">7 Days</span>
+                        </div>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 package-item" data-category="family">
+                <div class="package-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/beach.webp" class="card-img-top" alt="Goa Family">
+                        <span class="card-badge">Budget</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Goa Family Fun</h3>
+                        <p class="card-text">Beaches, water sports, spice plantation visit, and family-friendly resorts in Goa.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-bed"></i> 3 Star</span>
+                            <span class="card-feature"><i class="fa-solid fa-utensils"></i> Breakfast</span>
+                            <span class="card-feature"><i class="fa-solid fa-water"></i> Activities</span>
+                            <span class="card-feature"><i class="fa-solid fa-kid"></i> Kids Club</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <p class="card-price mb-0">₹25,000 <span>/ person</span></p>
+                            </div>
+                            <span class="badge bg-success">5 Days</span>
+                        </div>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 package-item" data-category="adventure">
+                <div class="package-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/mountain.jpg" class="card-img-top" alt="New Zealand">
+                        <span class="card-badge">Premium</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">New Zealand Explorer</h3>
+                        <p class="card-text">Adventure sports, stunning landscapes, Maori culture, and LOTR filming locations.</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-bed"></i> 4 Star</span>
+                            <span class="card-feature"><i class="fa-solid fa-utensils"></i> All Meals</span>
+                            <span class="card-feature"><i class="fa-solid fa-car"></i> Campervan</span>
+                            <span class="card-feature"><i class="fa-solid fa-hiking"></i> Activities</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <p class="card-price mb-0">₹1,10,000 <span>/ person</span></p>
+                            </div>
+                            <span class="badge bg-success">14 Days</span>
+                        </div>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 package-item" data-category="cultural">
+                <div class="package-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/city.webp" class="card-img-top" alt="Japan Cultural">
+                        <span class="card-badge">Unique</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Japan Cultural Tour</h3>
+                        <p class="card-text">Tokyo, Kyoto, Osaka - temples, modern culture, cuisine, and cherry blossoms (seasonal).</p>
+                        <div class="card-features">
+                            <span class="card-feature"><i class="fa-solid fa-bed"></i> 4 Star</span>
+                            <span class="card-feature"><i class="fa-solid fa-utensils"></i> Breakfast</span>
+                            <span class="card-feature"><i class="fa-solid fa-train"></i> JR Pass</span>
+                            <span class="card-feature"><i class="fa-solid fa-torii-gate"></i> Culture</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <p class="card-price mb-0">₹72,000 <span>/ person</span></p>
+                            </div>
+                            <span class="badge bg-success">9 Days</span>
+                        </div>
+                        <a href="booking.html" class="btn btn-book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- No Results Message -->
+        <div id="noPackageResults" class="text-center d-none">
+            <i class="fa-solid fa-box-open" style="font-size: 4rem; color: #999; margin-bottom: 20px;"></i>
+            <h3>No packages found</h3>
+            <p class="text-muted">Try selecting a different category</p>
+        </div>
+    </section>
+
+    <!-- Why Book With Us -->
+    <section class="why-choose-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Book With ChaloChale?</h2>
+                <p>We make your travel planning effortless</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-percent"></i>
+                        </div>
+                        <h3>Best Prices</h3>
+                        <p>Competitive rates with no hidden charges. Price match guarantee available.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <h3>Flexible Booking</h3>
+                        <p>Easy date changes and cancellation options for peace of mind.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <h3>Expert Support</h3>
+                        <p>Dedicated travel consultants to help you plan the perfect trip.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3>Secure Payments</h3>
+                        <p>100% secure payment gateway with multiple payment options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4>ChaloChale</h4>
+                    <p>Your trusted travel partner for unforgettable journeys across the globe.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Top Packages</h4>
+                    <ul>
+                        <li><a href="#">Maldives</a></li>
+                        <li><a href="#">Switzerland</a></li>
+                        <li><a href="#">Thailand</a></li>
+                        <li><a href="#">Bali</a></li>
+                        <li><a href="#">Italy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Booking Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-phone me-2"></i> +91 98765 43210</li>
+                        <li><i class="fa-solid fa-envelope me-2"></i> info@chalochale.com</li>
+                        <li><i class="fa-solid fa-location-dot me-2"></i> New Delhi, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 ChaloChale. All rights reserved. Made with ❤️ for travelers</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
