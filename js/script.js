@@ -308,6 +308,99 @@ window.addEventListener('scroll', function() {
     }
 });
 
+// ===== Mobile Navbar Enhancement =====
+document.addEventListener('DOMContentLoaded', function() {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    
+    if (navbarToggler && navbarCollapse) {
+        // Close navbar when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!navbarToggler.contains(e.target) && !navbarCollapse.contains(e.target)) {
+                if (navbarCollapse.classList.contains('show')) {
+                    navbarToggler.click();
+                }
+            }
+        });
+        
+        // Close navbar when clicking a nav link
+        const navLinks = navbarCollapse.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (navbarCollapse.classList.contains('show')) {
+                    navbarToggler.click();
+                }
+            });
+        });
+    }
+    
+    // Smooth scroll for mobile
+    if ('scrollBehavior' in document.documentElement.style) {
+        document.documentElement.style.scrollBehavior = 'smooth';
+    }
+});
+
+// ===== Touch-Friendly Enhancements =====
+document.addEventListener('DOMContentLoaded', function() {
+    // Increase touch targets on mobile
+    if (window.innerWidth <= 767) {
+        const buttons = document.querySelectorAll('button, .btn');
+        buttons.forEach(btn => {
+            btn.style.minHeight = '44px';
+            btn.style.minWidth = '44px';
+        });
+        
+        // Make cards fully clickable on mobile
+        const cards = document.querySelectorAll('.destination-card, .package-card');
+        cards.forEach(card => {
+            card.style.cursor = 'pointer';
+        });
+    }
+});
+
+// ===== Responsive Image Loading =====
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img');
+    
+    // Lazy load images for better performance
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.classList.add('loaded');
+                    observer.unobserve(img);
+                }
+            });
+        });
+        
+        images.forEach(img => {
+            imageObserver.observe(img);
+        });
+    }
+});
+
+// ===== Orientation Change Handler =====
+window.addEventListener('orientationchange', function() {
+    // Recalculate layouts after orientation change
+    setTimeout(function() {
+        window.scrollTo(0, window.scrollY);
+    }, 100);
+});
+
+// ===== Resize Handler =====
+let resizeTimer;
+window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+        // Handle responsive adjustments
+        const navbar = document.querySelector('.navbar-collapse');
+        if (navbar && window.innerWidth > 991) {
+            navbar.classList.remove('show');
+        }
+    }, 250);
+});
+
 // ===== Animation on Scroll =====
 const observerOptions = {
     threshold: 0.1,

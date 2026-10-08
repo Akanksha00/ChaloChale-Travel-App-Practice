@@ -902,34 +902,519 @@ footer .copyright {
 }
 
 /* ===== Responsive Design ===== */
-@media (max-width: 768px) {
+
+/* Extra Large Devices (1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Large Devices (992px to 1199px) */
+@media (max-width: 1199px) {
     .carousel-caption h2 {
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+    
+    .section-title h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Medium Devices (768px to 991px) */
+@media (max-width: 991px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    
+    .nav-link {
+        padding: 10px 15px !important;
+    }
+    
+    .carousel-caption h2 {
+        font-size: 2.5rem;
     }
     
     .carousel-caption p {
+        font-size: 1.2rem;
+    }
+    
+    .carousel-caption .btn {
+        padding: 12px 30px;
         font-size: 1rem;
     }
     
     .hero-section h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+    }
+    
+    .hero-section p {
+        font-size: 1.1rem;
     }
     
     .section-title h2 {
         font-size: 2rem;
     }
     
+    .section-title p {
+        font-size: 1rem;
+    }
+    
     .search-section {
-        margin-top: 0;
-        border-radius: 0;
+        margin-top: -50px;
+        padding: 40px 0;
+    }
+    
+    .search-box {
+        padding: 20px;
+    }
+    
+    .feature-box {
+        padding: 30px 20px;
+    }
+    
+    .testimonial-card {
+        padding: 30px;
+    }
+    
+    .team-card img {
+        height: 250px;
+    }
+    
+    .booking-summary {
+        position: static;
+        margin-top: 30px;
+    }
+    
+    .auth-card {
+        padding: 30px;
+    }
+}
+
+/* Small Devices (576px to 767px) */
+@media (max-width: 767px) {
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+    
+    .nav-link {
+        padding: 8px 10px !important;
+        font-size: 0.95rem;
+    }
+    
+    .btn-warning {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .carousel-item img {
+        height: 400px;
+    }
+    
+    .carousel-caption {
+        bottom: 20%;
+    }
+    
+    .carousel-caption h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    
+    .carousel-caption p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .carousel-caption .btn {
+        padding: 10px 25px;
+        font-size: 0.95rem;
+    }
+    
+    .hero-section {
+        padding: 80px 0 60px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .hero-section p {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        margin-bottom: 40px;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title h2::after {
+        width: 60px;
+    }
+    
+    .section-title p {
+        font-size: 0.95rem;
+    }
+    
+    section {
+        padding: 50px 0;
+    }
+    
+    .search-section {
+        margin-top: -30px;
+        padding: 30px 0;
+        border-radius: 15px;
+    }
+    
+    .search-box {
+        padding: 20px 15px;
+    }
+    
+    .search-box .form-control,
+    .search-box .form-select {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+    
+    .search-btn {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+    
+    .destination-card,
+    .package-card {
+        margin-bottom: 20px;
+    }
+    
+    .destination-card img,
+    .package-card img {
+        height: 200px;
+    }
+    
+    .card-body {
+        padding: 20px;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+    }
+    
+    .card-text {
+        font-size: 0.9rem;
+    }
+    
+    .card-price {
+        font-size: 1.5rem;
+    }
+    
+    .card-features {
+        gap: 10px;
+    }
+    
+    .card-feature {
+        font-size: 0.85rem;
+    }
+    
+    .feature-box {
+        padding: 25px 20px;
+        margin-bottom: 20px;
+    }
+    
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .feature-box h3 {
+        font-size: 1.1rem;
+    }
+    
+    .feature-box p {
+        font-size: 0.9rem;
+    }
+    
+    .testimonial-card {
+        padding: 25px 20px;
+        margin-bottom: 20px;
+    }
+    
+    .testimonial-avatar {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .testimonial-text {
+        font-size: 1rem;
+    }
+    
+    .team-card {
+        margin-bottom: 20px;
+    }
+    
+    .team-card img {
+        height: 220px;
+    }
+    
+    .team-card-body {
+        padding: 20px;
+    }
+    
+    .team-card h4 {
+        font-size: 1.1rem;
+    }
+    
+    .about-stats {
+        margin-top: -30px;
+        padding: 40px 0;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.95rem;
+    }
+    
+    .contact-form {
+        padding: 30px 20px;
+    }
+    
+    .contact-info-box {
+        padding: 30px 20px;
+    }
+    
+    .contact-info-item {
+        margin-bottom: 20px;
+    }
+    
+    .contact-info-item i {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .auth-card {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+    
+    .auth-card h2 {
+        font-size: 1.6rem;
+    }
+    
+    .booking-form {
+        padding: 30px 20px;
     }
     
     .booking-steps {
         flex-direction: column;
+        gap: 10px;
     }
     
     .step-item {
-        margin: 10px 0;
+        margin: 5px 0;
+        padding: 15px 20px;
+    }
+    
+    .ai-section {
+        padding: 50px 0;
+    }
+    
+    .ai-box {
+        padding: 25px 20px;
+    }
+    
+    .newsletter-section {
+        padding: 50px 0;
+    }
+    
+    .newsletter-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .newsletter-section p {
+        font-size: 1rem;
+    }
+    
+    footer {
+        padding: 50px 0 20px;
+    }
+    
+    footer h4 {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+    
+    footer ul li {
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .copyright {
+        margin-top: 30px;
+        padding-top: 20px;
+        font-size: 0.85rem;
+    }
+    
+    .toast-container {
+        top: 80px;
+        right: 10px;
+        left: 10px;
+    }
+    
+    .custom-toast {
+        padding: 15px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra Small Devices (375px to 575px) */
+@media (max-width: 575px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .carousel-item img {
+        height: 350px;
+    }
+    
+    .carousel-caption h2 {
+        font-size: 1.6rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.5rem;
+    }
+    
+    .section-title h2::after {
+        width: 50px;
+    }
+    
+    .search-section {
+        margin-top: -20px;
+        padding: 20px 0;
+    }
+    
+    .search-box {
+        padding: 15px;
+    }
+    
+    .destination-card img,
+    .package-card img {
+        height: 180px;
+    }
+    
+    .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .card-price {
+        font-size: 1.3rem;
+    }
+    
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    
+    .feature-box h3 {
+        font-size: 1rem;
+    }
+    
+    .feature-box p {
+        font-size: 0.85rem;
+    }
+    
+    .testimonial-avatar {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .testimonial-text {
+        font-size: 0.95rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .booking-summary {
+        padding: 25px 15px;
+    }
+    
+    .auth-card {
+        padding: 25px 15px;
+    }
+    
+    .ai-box {
+        padding: 20px 15px;
+    }
+    
+    footer .row {
+        row-gap: 30px;
+    }
+}
+
+/* Landscape Orientation for Mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+    .carousel-item img {
+        height: 300px;
+    }
+    
+    .hero-section {
+        padding: 40px 0;
+    }
+    
+    section {
+        padding: 30px 0;
+    }
+}
+
+/* High DPI/Retina Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .navbar-brand,
+    .section-title h2,
+    .card-title {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .carousel,
+    .search-section,
+    .newsletter-section,
+    footer,
+    .btn,
+    .booking-steps {
+        display: none !important;
+    }
+    
+    .container {
+        max-width: 100% !important;
+    }
+    
+    .destination-card,
+    .package-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 }
 
